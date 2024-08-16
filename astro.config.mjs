@@ -4,6 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://alefeokt.github.io",
+  site: "https://feok.it",
   integrations: [mdx(), sitemap(), tailwind()],
 });
