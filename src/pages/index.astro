@@ -38,16 +38,17 @@ const work = await Promise.all(
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
+        <p class="animate">
+         <strong>(2021 – )</strong>&nbsp;<Link href="https://www.linkedin.com/company/publicis-groupe" external>Publicis Groupe</Link>. I lead the Development and Data Science team of the LePont business unit. This team is dedicated to providing innovation services for Groupe's top-tier clients around the world. We work with the US, UK, Western Europe and Middle East markets. We develop our own proprietary products for performance media optimization, platform integration and dynamic creative optimization.
+        </p>
+        <p class="animate">Before 2022 I was Chief Data and Technology Officer of Publicis Russia with more that 100 employees in Development, E-commerce, Research and Data science teams.
+        </p>
+        <p class="animate">
+        <strong>(2017 – 2020)</strong>&nbsp;<Link href="https://ohm.agency/" external>OHM Solutions</Link>. The agency we have built with my partners ranks as one of the most successful independent media performance agencies on the market with a strong portfolio of top-tier clients.
+        </p>
           <p class="animate">
-          I started at <Link href="https://www.crunchbase.com/organization/yandex" external>Yandex</Link> as a marketing specialist and quickly climbed up to become the Business Development Director for Yandex Market. Over 40% revenue growth year over year and more than 100 million product offers a day shook up the e-commerce game. I also spearheaded successful M&A deals, including <Link href="https://techcrunch.com/2014/12/09/yandex-buys-sovetnik-to-expand-its-e-commerce-business-with-better-recommendations/" external>Yandex Sovetnik</Link>, our nifty price-comparison tool.
+          <strong>(2011 – 2016)</strong>&nbsp;<Link href="https://www.crunchbase.com/organization/yandex" external>Yandex</Link> Market (The largest Marketplace in CIS). I have progressed from sole marketing manager to Business Development director. Over the course of my career, I have been responsible for digital, offline, and performance marketing, product management, distribution, and external monetization. I have also led successful M&A deals such as <Link href="https://techcrunch.com/2014/12/09/yandex-buys-sovetnik-to-expand-its-e-commerce-business-with-better-recommendations/" external>Metabar Advisor</Link>, a highly popular price comparison tool.
           </p>
-          <p class="animate">
-          My next step was to team up with some amazing minds at <Link href="https://ohm.agency/" external> OHM Solutions</Link>, where we have a stellar portfolio of top-tier clients. We're a unique group, with more than half of us being developers and analysts. This mix allows us to keep quality high and costs low.
-          </p>
-          <p class="animate">
-           At <Link href="https://www.linkedin.com/company/publicis-groupe" external>Publicis Groupe</Link>, I oversaw the Data & Technology and E-commerce departments, where we built some really cool analytics tools, AdTech tools, and data strategies. Now, as an AdTech Lead at Publicis LePont, I get to apply all that knowledge to enhance our media and creative businesses. We've got a suite of proprietary tools that help our clients fine-tune their campaigns, maximize their ROI, and really make their mark in the digital world.
-          </p>
-          <p class="animate">Technology and data are what really get me going, as they can help brands shine. Would you like to discuss how we can work together? Feel free to contact me! Don't be a stranger!</p>
         </article>
       </section>
 
@@ -68,14 +69,33 @@ const work = await Promise.all(
           ))}
         </ul>
       </section> -->
+      <section class="animate space-y-4">
+        <h5 class="font-semibold text-black dark:text-white">
+          Would you like to discuss how we can work together? Feel free to contact me!
+        </h5>
 
+        <ul class="flex flex-wrap gap-2">
+          {SOCIALS.map(SOCIAL => (
+            <li class="flex gap-x-2 text-nowrap">
+              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
+                {SOCIAL.NAME}
+              </Link>
+            </li>
+          ))}
+          <li class="line-clamp-1">
+            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
+              {SITE.EMAIL}
+            </Link>
+          </li>
+        </ul>
+      </section>
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
             Work Experience
           </h5>
           <Link href="/work">
-            See all
+            In details
           </Link>
         </div>
         <ul class="flex flex-col space-y-4">
@@ -116,31 +136,7 @@ const work = await Promise.all(
         </ul>
       </section>-->
 
-      <section class="animate space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
-        </h5>
-        <article>
-          <p>
-            If you want to get in touch with me about something,
-            reach out on social media.
-          </p>
-        </article>
-        <ul class="flex flex-wrap gap-2">
-          {SOCIALS.map(SOCIAL => (
-            <li class="flex gap-x-2 text-nowrap">
-              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
-                {SOCIAL.NAME}
-              </Link>
-            </li>
-          ))}
-          <li class="line-clamp-1">
-            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
-              {SITE.EMAIL}
-            </Link>
-          </li>
-        </ul>
-      </section>
+
     </div>
   </Container>
 </PageLayout>

@@ -2,7 +2,7 @@ import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
   NAME: "Alexander Feoktistov",
-  EMAIL: "",
+  EMAIL: "hi@feok.it",
   LOCATION: "Lisbon, Portugal",
   NUM_POSTS_ON_HOMEPAGE: 0,
   NUM_WORKS_ON_HOMEPAGE: 0,
@@ -21,8 +21,8 @@ export const BLOG: Metadata = {
 };
 
 export const WORK: Metadata = {
-  TITLE: "Work",
-  DESCRIPTION: "Where I have worked and what I have done",
+  TITLE: "Work Experience",
+  DESCRIPTION: "Detailed description of my roles for last 10+ years",
 };
 
 export const PROJECTS: Metadata = {
